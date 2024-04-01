@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+
+  color: #1e1f36;
+  background: linear-gradient(180deg, #dde3ff 0%, #fff 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  background-color: #d9dcff;
+  border-bottom: #a1b2ff 2px solid;
+  width: 70vw;
+  border-top-left-radius: 1.4375rem;
+  border-top-right-radius: 1.4375rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 6rem 0 1.5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+button {
+  display: flex;
+  width: 9rem;
+  height: 9.25rem;
+  padding: 3.5rem 0.875rem 3.4375rem 0.875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 2px solid #bcbcbc;
+  background-color: #eeeeff;
+}
+
+button:hover {
+  border-bottom: 6px solid #7386e6;
+  border-left: 6px solid #7386e6;
+  cursor: pointer;
+}
+
+img {
+  width: 7.25rem;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  height: auto;
+  min-height: 60vh;
+  flex-shrink: 0;
+  border-radius: 1.4375rem;
+  background: #fff;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+  margin-top: 10vh;
+  padding: 0 5rem 3rem;
+  background: linear-gradient(180deg, #fff 0%, #dae2ff 100%);
+}
+
+.personal-info {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 4rem;
+  width: 50%;
+}
+
+.banderas {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.error {
+  border: 1px solid #f00;
+  background: #ffe8e8;
+}
+
+@media screen and (max-width: 1065px) {
+  p {
+    margin-bottom: 3.5rem;
+  }
+
+  button {
+    width: 40%;
+    height: 7.25rem;
+    padding: 1.5rem 0.875rem 1.4375rem;
+  }
+
+  img {
+    width: 5.25rem;
+    height: auto;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .banderas {
+    height: 290px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+
+@media screen and (max-width: 704px) {
+  nav {
+    border-bottom: #a1b2ff 1.4px solid;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 4rem 0 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 0.7rem;
+    align-self: center;
+    text-align: center;
+  }
+
+  button {
+    width: 40%;
+    height: auto;
+    padding: 1.5rem 0.875rem 1.4375rem;
+  }
+
+  img {
+    width: 4rem;
+    height: auto;
+  }
+
+  .card {
+    padding: 0 1rem 1.5rem;
+  }
+
+  .personal-info {
+    gap: 1rem;
+    width: 70%;
+  }
+
+  .banderas {
+    justify-content: space-around;
+    align-content: space-around;
+  }
+}
